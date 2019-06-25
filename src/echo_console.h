@@ -4,7 +4,7 @@
 #include <syslog.h>     /* LOG_* */
 #include <errno.h>
 
-#define DEBUG_LEVEL LOG_DEBUG
+#define DEBUG_LEVEL LOG_ERR
 
 #define ECHO_CONSOLE_DEBUG(fmt, args...) do {\
     if (DEBUG_LEVEL >= LOG_DEBUG) \

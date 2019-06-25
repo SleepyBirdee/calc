@@ -6,7 +6,7 @@
 #define _LOG_MSG_LEN 256
 
 void echo_console(int level, const char *fmt, ...){
-    char buf[_LOG_MSG_LEN +32];
+//    char buf[_LOG_MSG_LEN +32];
     char msg[_LOG_MSG_LEN];
     va_list args;
     
@@ -17,5 +17,5 @@ void echo_console(int level, const char *fmt, ...){
 //    snprintf(buf, sizeof(buf), "echo \"%s\" > /dev/console \r\n", msg);
 //    system(buf);
 
-	printf("%s\n", buf);
+	printf("%s\n", msg);
 } /* echo_console */
