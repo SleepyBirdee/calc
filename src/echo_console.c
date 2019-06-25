@@ -14,6 +14,8 @@ void echo_console(int level, const char *fmt, ...){
     vsnprintf(msg, sizeof(msg), fmt, args);
     va_end(args);
     
-    snprintf(buf, sizeof(buf), "echo \"%s\" > /dev/console \r\n", msg);
-    system(buf);
+//    snprintf(buf, sizeof(buf), "echo \"%s\" > /dev/console \r\n", msg);
+//    system(buf);
+
+	printf("%s\n", buf);
 } /* echo_console */
